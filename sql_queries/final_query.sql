@@ -1,13 +1,17 @@
 SELECT
-    customerid,
-    surname,
-    geography,
-    balance,
-    creditscore,
-    isactivemember,
-    exited,
-    RANK() OVER (ORDER BY balance DESC) AS customer_rank
+    CustomerId,
+    Surname,
+    Geography,
+    Gender,
+    Age,
+    Balance,
+    CreditScore,
+    NumOfProducts,
+    IsActiveMember,
+    Exited,
+
+    RANK() OVER (ORDER BY Balance DESC) AS balance_rank
+
 FROM churn
-WHERE exited = 1
-ORDER BY balance DESC
-LIMIT 10;
+WHERE Exited = 1;
+
