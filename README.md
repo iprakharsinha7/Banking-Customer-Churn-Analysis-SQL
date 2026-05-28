@@ -116,7 +116,7 @@ The project also helped strengthen practical skills in:
 
 ```bash
 sql_queries/
-report/
+reports/
 presentations/
 screenshots/
 dataset/
